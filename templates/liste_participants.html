@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h2 class="text-center"> Liste des participants enregistrés</h2>
+{% if participants %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom(s)</th>
+            <th>Numéro téléphone</th>
+            <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for participant in participants %}
+
+        <tr>
+            <th> {{participant.nom}} </th>
+            <th> {{participant.prenom}} </th>
+            <th> {{participant.telephone}} </th>
+            <th> {{participant.email}} </th>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+    <p>Pas de participants encore inscrits</p>
+{% endif %}
+
+{% endblock %}

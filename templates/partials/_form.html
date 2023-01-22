@@ -1,0 +1,33 @@
+<form action="", method="post">
+    <div class="row">
+        <!-- Champ Nom -->
+        <div class="col-sm-10">
+            <label for="name">Votre nom : </label>
+            <input type="text", name="nom" id="nom", class="form-control", placeholder="Saisissez votre nom ici" required/>
+        </div>
+
+        <!-- Champ Prénom -->
+        <div class="col-sm-10">
+            <label for="autor">Vos prénoms : </label>
+            <input type="text", name="prenom" id="prenom", class="form-control", placeholder="Saisissez vos prénoms ici" required/>
+        </div>
+
+        <!-- Champ Telephone -->
+        <div class="col-sm-10">
+            <label for="autor">Votre numéro téléphone : </label>
+            <input type="tel", name="telephone" id="telephone", class="form-control", placeholder="0123456789", pattern="[0-9]{10}" required/>
+        </div>
+
+        <!-- Champ Email -->
+        <div class="col-sm-10">
+            <label for="autor">Votre email : </label>
+            <input type="text", name="email" id="email", class="form-control", placeholder="aaa@email.com" required/>
+        </div>
+
+        <!-- Champ de Validation -->
+        <div class="col-sm-10">
+            <button type="submit", class="btn btn-primary"> S'enregistrer </button>
+        </div>
+
+    </div>
+</form>
